@@ -1,31 +1,23 @@
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+#include <stddef.h>
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	a;
-	unsigned char	*p;
+	const unsigned char	*p1;
+	const unsigned char	*p2;
 	size_t	i;
 
+	p1 = (const unsigned char *) s1;
+	p2 = (const unsigned char *) s2;
 	i = 0;
-	p = (unsigned char *) s;
-	a = (unsigned char) c;
+	if (n == 0)
+		return (0);
 	while (i < n)
 	{
-		if (p[i] == a)
-			return ((void *) &p[i]);
+		if (p1[i] != p2[i])
+			return (p1[i] - p2[i]);
 		i++;
 	}
-	return (NULL);
-}
-
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char s[] = "";
-	printf("%p\n", (char *) ft_memchr(s, '\0', 4));
-	printf("\n%p\n", (char *) memchr(s, '\0', 4));
 	return (0);
 }
