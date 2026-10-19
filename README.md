@@ -74,12 +74,3 @@ Some problems need an API key (for example, `bitcoin`). Put it in a `.env` file 
 ## Academic honesty
 
 This repository is for my own learning. If you are taking CS50P, please follow the [course's academic honesty policy](https://cs50.harvard.edu/python/2022/honesty/) and write your own solutions. Use this code only to compare ideas after you have solved a problem yourself.
-
-## Contact
-
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-name](https://www.linkedin.com/in/your-profile)
-
-## Acknowledgements
-
-Thanks to David J. Malan and the CS50 team for making this course free and open to everyone.
